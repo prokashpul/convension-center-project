@@ -46,7 +46,10 @@ h2 {
     border-radius: 20px;
 }
 
-
+/* =========footer========== */
+footer{
+    margin-top:100px;
+}
 
 /* responsive */
 
@@ -58,5 +61,19 @@ h2 {
     /* price section */
     .card-hilight {
         transform: scale(1);
+    }
+    .card-hover{
+        background: rgba(0, 0, 0, 0.699);
+        color: #fff;
+        border-radius: 20px;
+    }
+    .card-hover .btn {
+        background: #fff;
+        color: black;
+    }
+    /* =====footer======== */
+    footer{
+        margin-top:50px;
+        }
     }
 }
