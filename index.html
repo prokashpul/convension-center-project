@@ -41,6 +41,9 @@
                             <a class="nav-link" href="#about">About Us</a>
                         </li>
                         <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#package">Package</a>
+                        </li>
+                        <li class="nav-item fw-bold">
                             <a class="nav-link " href="#contact">Contact</a>
                         </li>
 
@@ -107,7 +110,7 @@
     <main class="main container">
         <!-- moment section -->
 
-        <section class="moment basic-gap">
+        <section class="moment basic-gap" id="about">
             <div class="row align-items-center g-4">
                 <div class="col-md-6">
                     <h2 class="fs-1 fw-bold">Every moment is Precious </h2>
@@ -125,7 +128,7 @@
         </section>
 
         <!-- ====== package section =========== -->
-        <section class="price basic-gap">
+        <section class="price basic-gap" id="#package">
             <h2 class="text-center fs-1 fw-bold ">Our Package</h2>
             <div class="row basic-gap">
                 <div class="col-md-3 my-3 my-md-auto">
@@ -290,24 +293,23 @@
             </div>
         </section>
         <!-- =============subscribe section============== -->
-            <section class="subscribe text-center rounded shadow-lg bg-body py-5 basic-gap" id="subscribe">
-                    <div class="h2 fw-bold">LET'S STAY IN TOUCH</div>
-                    <div class="d-flex flex-column justify-content-center align-items-center mt-3">
-                    <div class="h5 text-secondary">
-                        Get updates on sales, specials and more
-                    </div>
-                    <div class="sub-from d-flex my- ">
-                        <input type="text" name="subscribe" id="sub" placeholder="Your email" />
-                        <div class="btn btn-primary border-0 rounded-0 outline-0">Subscribe</div>
-                    </div>
-                    </div>
-            </section>
+        <section class="subscribe text-center rounded shadow-lg bg-body py-5 basic-gap" id="subscribe">
+            <div class="h2 fw-bold">LET'S STAY IN TOUCH</div>
+            <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+                <div class="h5 text-secondary">
+                    Get updates on sales, specials and more
+                </div>
+                <div class="sub-from d-flex my- ">
+                    <input type="text" name="subscribe" id="sub" placeholder="Your email" />
+                    <div class="btn btn-primary border-0 rounded-0 outline-0">Subscribe</div>
+                </div>
+            </div>
+        </section>
 
         <!-- Toast -->
 
         <div class="toast position-fixed bottom-50 start-0  p-1 text-light bg-primary border-0" role="alert"
-            aria-live="assertive"
-            aria-atomic="true">
+            aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body">
                     30% off on next booking....
@@ -331,8 +333,9 @@
                 href="https://play.google.com/store/apps/details?id=learn.programming.courses&hl=en&gl=US"> <img
                     src="imgs/Google Play Badge.png" alt="play store"></a>
         </div>
-        <p>© 2022 <a href=""> PRO<span class="text-primary"><img src="imgs/waidding.svg" alt="" height="15" width="20">Center <span></a>.All rights reserved</p>
-            
+        <p>© 2022 <a href=""> PRO<span class="text-primary"><img src="imgs/waidding.svg" alt="" height="15"
+                        width="20">Center <span></a>.All rights reserved</p>
+
     </footer>
 
     <!--====================== Scripts============ -->
@@ -346,10 +349,10 @@
     <script>
         var toastElList = [].slice.call(document.querySelectorAll('.toast'))
         var toastList = toastElList.map(function (toastEl) {
-           
-            return new bootstrap.Toast(toastEl) 
+
+            return new bootstrap.Toast(toastEl)
         });
-        toastList.forEach(toast => toast.show()); 
+        toastList.forEach(toast => toast.show());
 
         // console.log(toastList);
     </script>
