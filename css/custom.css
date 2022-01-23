@@ -11,13 +11,49 @@ h2 {
     font-size: 2rem;
     font-weight: 700;
 }
-section{
-    margin-top:100px;
+
+.basic-gap {
+    margin-top: 100px;
 }
 
 /* header section*/
-.proweb-bg{
-    background:rgba(0, 0, 0, 0.699);
+.proweb-bg {
+    background: rgba(0, 0, 0, 0.699);
     margin-bottom: 20px;
-    padding:20px;
-} 
+    padding: 20px;
+}
+
+/* Main section */
+/* price*/
+.card-hover {
+    transition: 1s ease;
+}
+
+.card-hover:hover {
+    background: rgba(0, 0, 0, 0.699);
+    color: #fff;
+    border-radius: 20px;
+}
+.card-hover:hover .btn{
+    background: #fff;
+    color: black;
+}
+
+.card-hilight {
+    background: rgba(0, 0, 0, 0.699);
+    color: #fff;
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+
+
+/* responsive */
+
+@media (max-width:576px) {
+
+    /* price section */
+    .card-hilight {
+        transform: scale(1);
+    }
+}
