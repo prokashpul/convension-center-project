@@ -33,12 +33,12 @@ h2 {
     color: #fff;
     border-radius: 20px;
 }
-.card-hover:hover .btn{
+.card-hover:hover .btns{
     background: #fff;
     color: black;
 }
 
-.card-hilight {
+.card-highlight {
     background: rgba(0, 0, 0, 0.699);
     color: #fff;
     transform: scale(1.1);
@@ -78,4 +78,3 @@ footer{
         margin-top:50px;
         }
     }
-}
