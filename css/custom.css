@@ -72,6 +72,7 @@ footer {
     /* price section */
     .card-highlight {
         transform: scale(1);
+        background: #0D6EFD;
     }
     .card-hover {
         background: rgba(0, 0, 0, 0.699);
